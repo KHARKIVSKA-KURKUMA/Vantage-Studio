@@ -1,0 +1,70 @@
+.service {
+  .container {
+    padding-bottom: 108px;
+  }
+}
+.service-desk {
+  @include text-base(null, 11px, 1.51);
+  text-align: center;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: $accentColor;
+  margin-bottom: 5px;
+}
+.service-title {
+  @include text-base(null, 53px, 1);
+  font-family: 'Teko';
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 66px;
+  row-gap: 32px;
+  margin-bottom: 91px;
+}
+.service-item {
+  padding-left: 34px;
+}
+.service-holder {
+  display: flex;
+}
+.service-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding-left: 17px;
+}
+.service-icon {
+  fill: $accentColor;
+}
+.service-text {
+  @include text-base(null, 11px, 1.51);
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: $accentColor;
+}
+.service-subtitle {
+  @include text-base(400, 26px, 1);
+  font-family: 'Teko';
+  text-transform: capitalize;
+}
+.service-list-desk {
+  @include text-base(null, 17px, 1.5);
+  max-width: 290px;
+}
+.service-btn {
+  @include text-base(null, 12px, 1.5);
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: $whiteColor;
+  padding: 25px 118px;
+  background-color: $accentColor;
+  border: transparent;
+  margin-left: 392px;
+}
