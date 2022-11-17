@@ -90,7 +90,6 @@ body {
   gap: 37px;
   padding-top: 18px;
   padding-bottom: 18px;
-  margin-right: 68px;
 }
 
 .header-link {
@@ -99,6 +98,10 @@ body {
   letter-spacing: 2.7625px;
   text-transform: uppercase;
   color: #ffffff;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link:hover, .header-link:focus {
+  color: #99823d;
 }
 
 .hero .container {
@@ -132,6 +135,10 @@ body {
   letter-spacing: 2.975px;
   text-transform: uppercase;
   color: #000000;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-link:hover, .hero-link:focus {
+  color: #99823d;
 }
 
 .hero-wrap {
@@ -350,4 +357,111 @@ body {
   text-transform: capitalize;
   color: #ffffff;
   padding: 15px 92px 15px;
+}
+
+.footer .container {
+  background-color: #ebebeb;
+  padding-top: 66px;
+  position: relative;
+}
+
+.footer-wrap {
+  background-color: #3d3d3d;
+  width: 1164px;
+  padding: 68px 68px 35px;
+  padding-left: 68px;
+  padding-right: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  fill: #ffffff;
+}
+
+.footer-list {
+  display: flex;
+  gap: 37px;
+}
+
+.footer-link {
+  font-size: 11px;
+  line-height: 3.09;
+  text-align: center;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link:hover, .footer-link:focus {
+  color: #99823d;
+}
+
+.footer-form-container {
+  width: 1025px;
+  height: 204px;
+  padding: 68px;
+  background-color: #99823d;
+  position: absolute;
+  top: 169px;
+  right: 140px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 17px;
+}
+
+.subscribe-input {
+  width: 800px;
+  height: 68px;
+  padding-left: 30px;
+  border: transparent;
+}
+.subscribe-input::placeholder {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 3.09;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+}
+
+.subscribe-btn {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 3.09;
+  text-align: center;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 16px 37px;
+  border: transparent;
+}
+
+.footer-bottom-container {
+  background-color: #0c0c0c;
+  height: 220px;
+  width: 1300px;
+}
+
+.footer-dev-list {
+  display: flex;
+  gap: 36px;
+  padding-top: 175px;
+  padding-left: 136px;
+}
+
+.dev-link {
+  font-size: 11px;
+  line-height: 3.09;
+  text-align: center;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dev-link:hover, .dev-link:focus {
+  color: #99823d;
 }/*# sourceMappingURL=main.css.map */

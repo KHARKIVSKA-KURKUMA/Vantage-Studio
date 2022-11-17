@@ -26,6 +26,11 @@
   letter-spacing: 2.975px;
   text-transform: uppercase;
   color: $blackColor;
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 .hero-wrap {
   width: 584px;

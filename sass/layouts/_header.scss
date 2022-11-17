@@ -26,11 +26,15 @@
   gap: 37px;
   padding-top: 18px;
   padding-bottom: 18px;
-  margin-right: 68px;
 }
 .header-link {
   @include text-base(null, 11px, 3.09);
   letter-spacing: 2.7625px;
   text-transform: uppercase;
   color: $whiteColor;
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }

@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- ------------------------------- HEADER -------------------------------- -->
-    <header class="header">
+    <header id="1" class="header">
       <div class="container">
         <div class="header-logo-container">
           <svg class="header-logo-icon" width="190" height="49">
@@ -33,22 +33,19 @@
           <nav class="header-nav">
             <ul class="header-list list">
               <li class="header-item">
-                <a href="" class="header-link link">home</a>
+                <a href="#1" class="header-link link">home</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-link link">about</a>
+                <a href="#2" class="header-link link">about</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-link link">services</a>
+                <a href="#3" class="header-link link">services</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-link link">projects</a>
+                <a href="#4" class="header-link link">projects</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-link link">news</a>
-              </li>
-              <li class="header-item">
-                <a href="" class="header-link link">contact</a>
+                <a href="#5" class="header-link link">contact</a>
               </li>
             </ul>
           </nav>
@@ -99,7 +96,7 @@
         </div>
       </section>
       <!-- -------------------------------- ABOUT -------------------------------- -->
-      <section class="about">
+      <section id="2" class="about">
         <div class="container">
           <div class="about-wrap">
             <div class="about-container">
@@ -206,7 +203,64 @@
       <!-- ----------------------------------------------------------------------- -->
     </main>
     <!-- ------------------------------- FOOTER -------------------------------- -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top-container"></div>
+        <div class="footer-wrap">
+          <a href="./index.html" class="footer-logo-link link"
+            ><svg class="footer-logo" width="130" height="34">
+              <use href="./img/icons.svg#icon-logo"></use></svg
+          ></a>
+
+          <div class="footer-nav-container">
+            <nav class="footer-nav">
+              <ul class="footer-list list">
+                <li class="footer-item">
+                  <a href="#1" class="footer-link link">home</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#2" class="footer-link link">about</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#3" class="footer-link link">services</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#4" class="footer-link link">projects</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#5" class="footer-link link">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-form-container">
+          <form class="subscribe-form">
+            <input
+              type="email"
+              class="subscribe-input"
+              placeholder="Newsletter (Enter Email)"
+              name="mailing-email"
+              id="mailing-email"
+            />
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-container">
+        <ul class="footer-dev-list list">
+          <li class="dev-list-item">
+            <a href="" class="dev-link link">licensing</a>
+          </li>
+          <li class="dev-list-item">
+            <a href="" class="dev-link link">styles</a>
+          </li>
+          <li class="dev-list-item">
+            <a href="" class="dev-link link">changelog</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!-- ----------------------------------------------------------------------- -->
   </body>
 </html>
