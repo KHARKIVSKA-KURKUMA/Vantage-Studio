@@ -160,14 +160,12 @@ body {
   font-size: 67px;
   line-height: 1;
   text-transform: capitalize;
-  color: #141414;
   margin-bottom: 32px;
 }
 
 .hero-desk {
   font-size: 17px;
   line-height: 1.5;
-  color: #141414;
   margin-bottom: 15px;
 }
 
@@ -200,4 +198,98 @@ body {
   right: 68px;
   position: absolute;
   bottom: 0;
+}
+
+.about {
+  padding-top: 136px;
+  padding-bottom: 136px;
+}
+
+.about-wrap {
+  display: flex;
+  margin-bottom: 68px;
+}
+
+.about-container {
+  padding-left: 68px;
+  padding-right: 68px;
+}
+
+.about-text {
+  font-size: 11px;
+  line-height: 1.51;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #99823d;
+  margin-bottom: 5px;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 1;
+  font-family: "Teko";
+  text-transform: capitalize;
+  max-width: 688px;
+  margin-bottom: 28px;
+}
+
+.about-desk {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5;
+  max-width: 684px;
+  margin-bottom: 16px;
+}
+.about-desk:last-child {
+  margin-bottom: 0;
+}
+
+.about-square {
+  width: 424px;
+  height: 320px;
+  background-color: #99823d;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 71px;
+}
+
+.about-item {
+  position: relative;
+}
+.about-item:last-child ::after {
+  display: none;
+}
+
+.list-wrap {
+  width: 100%;
+}
+.list-wrap::after {
+  content: "";
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  background: #99823d;
+  top: 50%;
+  left: 175%;
+}
+
+.list-number {
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 1;
+  font-family: "Teko";
+  text-align: center;
+}
+
+.list-desk {
+  font-size: 12px;
+  line-height: 1.49;
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #99823d;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,77 @@
+.about {
+  padding-top: 136px;
+  padding-bottom: 136px;
+}
+.about-wrap {
+  display: flex;
+  margin-bottom: 68px;
+}
+.about-container {
+  padding-left: 68px;
+  padding-right: 68px;
+}
+.about-text {
+  @include text-base(null, 11px, 1.51);
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: $accentColor;
+  margin-bottom: 5px;
+}
+.about-title {
+  @include text-base(400, 53px, 1);
+  font-family: 'Teko';
+  text-transform: capitalize;
+  max-width: 688px;
+  margin-bottom: 28px;
+}
+.about-desk {
+  @include text-base(400, 17px, 1.5);
+  max-width: 684px;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.about-square {
+  width: 424px;
+  height: 320px;
+  background-color: $accentColor;
+  //   opacity: 0.5;
+}
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 71px;
+}
+.about-item {
+  &:last-child {
+    ::after {
+      display: none;
+    }
+  }
+  position: relative;
+}
+.list-wrap {
+  width: 100%;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    background: $accentColor;
+    top: 50%;
+    left: 175%;
+  }
+}
+.list-number {
+  @include text-base(700, 49px, 1);
+  font-family: 'Teko';
+  text-align: center;
+}
+.list-desk {
+  @include text-base(null, 12px, 1.49);
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: $accentColor;
+}

@@ -48,12 +48,10 @@
   font-family: 'Teko', sans-serif;
   @include text-base(400, 67px, 1);
   text-transform: capitalize;
-  color: $titleColor;
   margin-bottom: 32px;
 }
 .hero-desk {
   @include text-base(null, 17px, 1.5);
-  color: $titleColor;
   margin-bottom: 15px;
 }
 .hero-btn-list {
