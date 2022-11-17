@@ -31,14 +31,14 @@
   color: $whiteColor;
   padding: 0 33px 33px;
   text-align: center;
-  height: 102px;
+  height: 87px;
   width: 206px;
   background-color: $accentColor;
 }
 .novelty-name {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: calc(100% - 34px);
   display: block;
   background-color: $titleColor;
   font-family: 'Teko';
@@ -46,5 +46,5 @@
   text-align: center;
   text-transform: capitalize;
   color: $whiteColor;
-  padding: 15px 92px 26px;
+  padding: 15px 92px 15px;
 }
