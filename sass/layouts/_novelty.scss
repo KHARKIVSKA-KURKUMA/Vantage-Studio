@@ -1,0 +1,50 @@
+.novelty {
+  padding-top: 136px;
+}
+.novelty-list {
+  display: flex;
+  gap: 34px;
+}
+.novelty-holder {
+  position: relative;
+}
+.new {
+  position: absolute;
+  top: 0;
+  display: block;
+  @include text-base(null, 11px, 1.48);
+  letter-spacing: 2.72px;
+  text-transform: uppercase;
+  color: $whiteColor;
+  padding: 9px 35px;
+  background-color: $titleColor;
+  width: 105px;
+}
+.novelty-type {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  right: 0;
+  @include text-base(null, 11px, 3.09);
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: $whiteColor;
+  padding: 0 33px 33px;
+  text-align: center;
+  height: 102px;
+  width: 206px;
+  background-color: $accentColor;
+}
+.novelty-name {
+  position: absolute;
+  bottom: 0;
+  width: 372px;
+  display: block;
+  background-color: $titleColor;
+  font-family: 'Teko';
+  @include text-base(null, 26px, 1);
+  text-align: center;
+  text-transform: capitalize;
+  color: $whiteColor;
+  padding: 15px 92px 26px;
+}
