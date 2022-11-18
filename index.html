@@ -20,9 +20,9 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body no-scroll>
     <!-- ------------------------------- HEADER -------------------------------- -->
-    <header class="header">
+    <header id="1" class="header">
       <div class="container">
         <div class="header-logo-container">
           <svg class="header-logo-icon" width="190" height="49">
@@ -51,12 +51,13 @@
           </nav>
         </div>
         <button type="button" class="js-open-menu" data-menu-open>
-          <svg class="header-menu-icon" width="30" height="30">
+          <svg class="header-menu-icon" width="40" height="40">
             <use href="./img/icons.svg#icon-menu-icon"></use>
           </svg>
         </button>
       </div>
-      <div class="menu header__menu__mobile" data-menu>
+      <!-- menu -->
+      <div class="menu header__menu__mobile is-hidden" data-menu>
         <div class="js-menu-container">
           <button type="button" class="menu__close" data-menu-close>
             <svg class="menu__close__icon" width="20" height="20">
@@ -66,19 +67,19 @@
           <nav class="header-menu-nav">
             <ul class="header-menu-list list">
               <li class="header-item">
-                <a href="" class="header-menu-link-nav link">home</a>
+                <a href="#1" class="header-menu-link-nav link">home</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-menu-link-nav link">about</a>
+                <a href="#2" class="header-menu-link-nav link">about</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-menu-link-nav link">services</a>
+                <a href="#3" class="header-menu-link-nav link">services</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-menu-link-nav link">projects</a>
+                <a href="#4" class="header-menu-link-nav link">projects</a>
               </li>
               <li class="header-item">
-                <a href="" class="header-menu-link-nav link">contact</a>
+                <a href="#5" class="header-menu-link-nav link">contact</a>
               </li>
             </ul>
           </nav>
@@ -101,10 +102,11 @@
         </div>
       </div>
     </header>
+
     <!-- ----------------------------------------------------------------------- -->
     <main>
       <!-- -------------------------------- HERO --------------------------------- -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="hero-bg-wrap"></div>
           <ul class="hero-soc-list list">
@@ -143,7 +145,7 @@
             <div class="hero-square"></div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- -------------------------------- ABOUT -------------------------------- -->
       <!-- <section id="2" class="about">
         <div class="container">
@@ -469,6 +471,6 @@
       </div>
     </footer> -->
     <!-- ----------------------------------------------------------------------- -->
-    <script src="mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

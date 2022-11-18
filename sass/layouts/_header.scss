@@ -4,6 +4,9 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      display: block;
+    }
   }
 }
 .header-logo-container {
@@ -15,6 +18,10 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+  @include tablet {
+    width: 160px;
+    height: 80px;
+  }
   @include desktop {
     width: 326px;
     height: 136px;
@@ -24,6 +31,10 @@
   width: 100px;
   height: 29px;
   fill: $whiteColor;
+  @include tablet {
+    width: 120px;
+    height: 32px;
+  }
   @include desktop {
     width: 190px;
     height: 49px;
@@ -57,9 +68,11 @@
   border: transparent;
   background-color: transparent;
   border-radius: 50%;
-  padding: 10px 12px;
-  top: 10px;
-  right: 15px;
+  padding: 10px 10px;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  align-items: center;
 }
 .menu__close__icon {
   transition: fill $transition;
@@ -69,7 +82,7 @@
   }
 }
 .js-menu-container {
-  padding-top: 60px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -77,9 +90,9 @@
     content: ' ';
     position: absolute;
     height: 3px;
-    width: 230px;
+    width: 210px;
     background: $accentColor;
-    bottom: 0;
+    bottom: 238px;
     border-radius: 5px;
     left: 40px;
     transform: rotate(-90deg) translateY(100%);
@@ -100,24 +113,22 @@
   }
 }
 .menu__social__container {
-  position: absolute;
-  top: 160%;
-  padding-left: 0px;
+  margin-top: 80px;
 }
 .menu__mobile__item {
   position: relative;
   &::before {
     content: ' ';
     position: absolute;
-    height: 9px;
-    width: 9px;
+    height: 6px;
+    width: 6px;
     background: $accentColor;
-    bottom: 40%;
+    bottom: 42%;
     left: -20px;
   }
 }
 .menu__mobile__social {
-  @include text-base(null, 15px, 3.09);
+  @include text-base(null, 12px, 3.09);
   letter-spacing: 2.7625px;
   text-transform: uppercase;
   color: $mainColor;
@@ -142,26 +153,34 @@
 }
 /* -------------------------------------------------------------------------- */
 .header-wrap {
-  display: flex;
-  justify-content: flex-end;
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .header-list {
   display: none;
-  @include desktop {
+  @include tablet {
     display: flex;
     gap: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @include desktop {
     padding-top: 18px;
     padding-bottom: 18px;
   }
 }
 .header-link {
-  @include text-base(null, 11px, 3.09);
-  letter-spacing: 2.7625px;
-  text-transform: uppercase;
-  color: $whiteColor;
-  transition: color $transition;
-  &:hover,
-  &:focus {
-    color: $accentColor;
+  @include tablet {
+    @include text-base(null, 11px, 3.09);
+    letter-spacing: 2.7625px;
+    text-transform: uppercase;
+    color: $whiteColor;
+    transition: color $transition;
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
 }
