@@ -1,13 +1,21 @@
 .projects {
-  .container {
+  background-color: $bgColor;
+  padding-top: 68px;
+  @include desktop {
     padding-bottom: 68px;
-    padding-top: 68px;
-    background-color: $bgColor;
   }
 }
 .projects-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  gap: 20px;
+  @include mobile {
+    gap: 40px;
+  }
+  @include tablet {
+    gap: 20px;
+  }
 }
 .project-item {
   &:last-child {
@@ -19,20 +27,26 @@
 .projects-wrap {
   position: relative;
   width: 100%;
-  &::after {
-    content: '';
-    position: absolute;
-    height: 9px;
-    width: 9px;
-    background: $accentColor;
-    bottom: 50%;
-    right: -40%;
+  @include desktop {
+    &::after {
+      content: '';
+      position: absolute;
+      height: 9px;
+      width: 9px;
+      background: $accentColor;
+      bottom: 50%;
+      right: -30%;
+    }
   }
 }
 .project-icon {
+  width: 120px;
   transition: fill $transition;
   .projects-link:hover &,
   .projects-link:focus & {
     fill: $accentColor;
+  }
+  @include desktop {
+    width: 148px;
   }
 }

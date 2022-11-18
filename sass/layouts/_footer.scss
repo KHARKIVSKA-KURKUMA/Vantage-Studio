@@ -1,25 +1,42 @@
 .footer {
+  background-color: $bgColor;
   .container {
-    background-color: $bgColor;
-    padding-top: 66px;
     position: relative;
+    padding-top: 66px;
   }
 }
 .footer-wrap {
   background-color: $greyColor;
-  width: 1164px;
+  width: 280px;
   padding: 68px 68px 35px;
   padding-left: 68px;
   padding-right: 68px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  @include mobile {
+    width: 440px;
+    justify-content: flex-end;
+  }
+  @include tablet {
+    width: 720px;
+    justify-content: space-between;
+  }
+  @include desktop {
+    width: calc(100% - 40px);
+  }
 }
 .footer-logo {
   fill: $whiteColor;
 }
 .footer-list {
-  display: flex;
-  gap: 37px;
+  display: none;
+  @include tablet {
+    display: flex;
+    gap: 15px;
+  }
+  @include desktop {
+    gap: 37px;
+  }
 }
 .footer-link {
   @include text-base(null, 11px, 3.09);
@@ -34,28 +51,64 @@
   }
 }
 .footer-form-container {
-  width: 1025px;
-  height: 204px;
-  padding: 68px;
+  width: 240px;
+  height: 160px;
+  padding: 20px;
   background-color: $accentColor;
   position: absolute;
-  top: 169px;
-  right: 140px;
+  top: 90%;
+  right: 12%;
+  @include mobile {
+    width: 400px;
+    top: 82%;
+    right: 8%;
+  }
+  @include tablet {
+    width: 670px;
+    top: 82%;
+    right: 4%;
+    padding: 45px 20px;
+  }
+  @include desktop {
+    width: 960px;
+    top: 169px;
+    right: 140px;
+    padding: 45px;
+  }
 }
 .subscribe-form {
-  display: flex;
-  gap: 17px;
+  @include tablet {
+    display: flex;
+    gap: 17px;
+  }
 }
 .subscribe-input {
-  width: 800px;
-  height: 68px;
-  padding-left: 30px;
+  width: 200px;
+  height: 48px;
+  padding-left: 5px;
   border: transparent;
+  margin-bottom: 10px;
   &::placeholder {
-    @include text-base(700, 11px, 3.09);
+    @include text-base(700, 7px, 3.09);
     letter-spacing: 2.7625px;
     text-transform: uppercase;
     color: $greyColor;
+  }
+  @include mobile {
+    width: 360px;
+    padding-left: 10px;
+    &::placeholder {
+      @include text-base(700, 11px, 3.09);
+    }
+  }
+  @include tablet {
+    width: 600px;
+    height: 68px;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    width: 800px;
+    padding-left: 30px;
   }
 }
 .subscribe-btn {
@@ -65,19 +118,32 @@
   text-transform: uppercase;
   color: $whiteColor;
   background-color: $blackColor;
-  padding: 16px 37px;
+  padding: 13px;
   border: transparent;
+  margin-left: 22%;
+  @include mobile {
+    padding: 16px 37px;
+    margin-left: 27%;
+  }
+  @include tablet {
+    margin-left: 0;
+  }
 }
 .footer-bottom-container {
   background-color: $mainColor;
-  height: 220px;
-  width: 1300px;
+  height: 180px;
+  @include desktop {
+    height: 200px;
+  }
 }
 .footer-dev-list {
-  display: flex;
-  gap: 36px;
-  padding-top: 175px;
-  padding-left: 136px;
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 36px;
+    padding-top: 132px;
+    padding-left: 140px;
+  }
 }
 .dev-link {
   @include text-base(null, 11px, 3.09);
