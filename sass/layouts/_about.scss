@@ -1,65 +1,138 @@
 .about {
-  padding-top: 136px;
+  padding-top: 66px;
+  @include tablet {
+    padding-top: 80px;
+  }
+  @include desktop {
+    padding-top: 136px;
+  }
 }
 .about-wrap {
   display: flex;
-  margin-bottom: 68px;
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    margin-bottom: 68px;
+  }
 }
 .about-container {
-  padding-left: 68px;
-  padding-right: 68px;
+  padding: 0 20px;
+  @include tablet {
+    padding: 0 40px;
+  }
+  @include desktop {
+    padding: 0 68px;
+  }
 }
 .about-text {
-  @include text-base(null, 11px, 1.51);
+  @include text-base(null, 8px, 1.51);
   letter-spacing: 2.7625px;
   text-transform: uppercase;
   color: $accentColor;
   margin-bottom: 5px;
+  text-align: center;
+  @include tablet {
+    @include text-base(null, 10px, 1.51);
+    text-align: left;
+  }
+  @include desktop {
+    @include text-base(null, 10px, 1.51);
+  }
 }
 .about-title {
-  @include text-base(400, 53px, 1);
+  @include text-base(400, 33px, 1);
   font-family: 'Teko';
   text-transform: capitalize;
-  max-width: 688px;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  @include tablet {
+    @include text-base(400, 43px, 1);
+    max-width: 410px;
+    margin-bottom: 18px;
+    text-align: left;
+  }
+  @include desktop {
+    @include text-base(400, 53px, 1);
+    max-width: 688px;
+    margin-bottom: 28px;
+  }
 }
 .about-desk {
-  @include text-base(400, 17px, 1.5);
-  max-width: 684px;
-  margin-bottom: 16px;
+  @include text-base(400, 14px, 1.5);
+  margin-bottom: 6px;
+  text-align: center;
   &:last-child {
     margin-bottom: 0;
   }
+  @include tablet {
+    @include text-base(400, 17px, 1.5);
+    max-width: 404px;
+    margin-bottom: 7px;
+    text-align: left;
+  }
+  @include desktop {
+    @include text-base(400, 17px, 1.5);
+    max-width: 684px;
+    margin-bottom: 16px;
+  }
 }
 .about-square {
-  width: 424px;
-  height: 320px;
-  background-color: $accentColor;
-  //   opacity: 0.5;
+  display: block;
+  @include tablet {
+    display: block;
+    width: 250px;
+    height: 453px;
+    background-color: $accentColor;
+  }
+  @include desktop {
+    width: 424px;
+    height: 375px;
+  }
 }
 .about-list {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 71px;
+  @include mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+  }
+  @include tablet {
+    gap: 0;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+  @include desktop {
+    flex-wrap: nowrap;
+    padding-left: 71px;
+  }
 }
 .about-item {
+  position: relative;
   &:last-child {
     ::after {
       display: none;
     }
   }
-  position: relative;
 }
 .list-wrap {
-  width: 100%;
-  &::after {
-    content: '';
-    position: absolute;
-    height: 9px;
-    width: 9px;
-    background: $accentColor;
-    top: 50%;
-    left: 175%;
+  @include tablet {
+    width: 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 9px;
+      width: 9px;
+      background: $accentColor;
+      top: 50%;
+      left: 115px;
+    }
+  }
+  @include desktop {
+    &::after {
+      left: 160%;
+    }
   }
 }
 .list-number {

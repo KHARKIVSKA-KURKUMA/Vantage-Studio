@@ -164,7 +164,7 @@
   border: transparent;
   @include mobile {
     @include text-base(null, 10px, 1.49);
-    width: 150px;
+    width: 130px;
     height: 50px;
   }
   @include desktop {
