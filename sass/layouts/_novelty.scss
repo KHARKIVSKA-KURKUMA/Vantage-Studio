@@ -1,13 +1,39 @@
 .novelty {
-  padding-top: 136px;
-  padding-bottom: 136px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  @include desktop {
+    padding-top: 136px;
+    padding-bottom: 136px;
+  }
 }
 .novelty-list {
   display: flex;
-  gap: 34px;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include desktop {
+    gap: 34px;
+    flex-wrap: nowrap;
+  }
 }
 .novelty-holder {
   position: relative;
+  width: 290px;
+  margin-left: 15px;
+  @include mobile {
+    width: 365px;
+  }
+  @include tablet {
+    width: 314px;
+  }
+  @include desktop {
+    width: 365px;
+  }
 }
 .new {
   position: absolute;
@@ -35,6 +61,12 @@
   height: 87px;
   width: 206px;
   background-color: $accentColor;
+  @include desktop {
+    @include text-base(null, 11px, 3.09);
+    height: 87px;
+    width: 206px;
+    padding: 0 33px 33px;
+  }
 }
 .novelty-name {
   position: absolute;
@@ -43,9 +75,9 @@
   display: block;
   background-color: $titleColor;
   font-family: 'Teko';
-  @include text-base(null, 26px, 1);
+  @include text-base(null, 25px, 1);
   text-align: center;
   text-transform: capitalize;
   color: $whiteColor;
-  padding: 15px 92px 15px;
+  padding: 15px 52px 15px;
 }

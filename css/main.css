@@ -822,17 +822,55 @@ body {
 }
 
 .novelty {
-  padding-top: 136px;
-  padding-bottom: 136px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+@media screen and (min-width: 1200px) {
+  .novelty {
+    padding-top: 136px;
+    padding-bottom: 136px;
+  }
 }
 
 .novelty-list {
   display: flex;
-  gap: 34px;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .novelty-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .novelty-list {
+    gap: 34px;
+    flex-wrap: nowrap;
+  }
 }
 
 .novelty-holder {
   position: relative;
+  width: 290px;
+  margin-left: 15px;
+}
+@media screen and (min-width: 480px) {
+  .novelty-holder {
+    width: 365px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .novelty-holder {
+    width: 314px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .novelty-holder {
+    width: 365px;
+  }
 }
 
 .new {
@@ -865,6 +903,15 @@ body {
   width: 206px;
   background-color: #99823d;
 }
+@media screen and (min-width: 1200px) {
+  .novelty-type {
+    font-size: 11px;
+    line-height: 3.09;
+    height: 87px;
+    width: 206px;
+    padding: 0 33px 33px;
+  }
+}
 
 .novelty-name {
   position: absolute;
@@ -873,12 +920,12 @@ body {
   display: block;
   background-color: #141414;
   font-family: "Teko";
-  font-size: 26px;
+  font-size: 25px;
   line-height: 1;
   text-align: center;
   text-transform: capitalize;
   color: #ffffff;
-  padding: 15px 92px 15px;
+  padding: 15px 52px 15px;
 }
 
 .service .container {
@@ -886,7 +933,7 @@ body {
 }
 
 .service-desk {
-  font-size: 11px;
+  font-size: 8px;
   line-height: 1.51;
   text-align: center;
   letter-spacing: 2.7625px;
@@ -894,28 +941,70 @@ body {
   color: #99823d;
   margin-bottom: 5px;
 }
+@media screen and (min-width: 768px) {
+  .service-desk {
+    font-size: 11px;
+    line-height: 1.51;
+  }
+}
 
 .service-title {
-  font-size: 53px;
+  font-size: 25px;
   line-height: 1;
   font-family: "Teko";
   text-align: center;
   text-transform: capitalize;
-  max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .service-title {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service-title {
+    font-size: 53px;
+    line-height: 1;
+    margin-bottom: 54px;
+    max-width: 800px;
+  }
 }
 
 .service-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 66px;
+  column-gap: 60px;
   row-gap: 32px;
-  margin-bottom: 91px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .service-list {
+    column-gap: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service-list {
+    margin-bottom: 91px;
+    column-gap: 66px;
+  }
 }
 
 .service-item {
-  padding-left: 34px;
+  width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .service-item {
+    width: 187px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service-item {
+    padding-left: 34px;
+    width: 300px;
+  }
 }
 
 .service-holder {
@@ -962,10 +1051,26 @@ body {
   letter-spacing: 2.975px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 25px 118px;
+  padding: 25px 80px;
   background-color: #99823d;
   border: transparent;
-  margin-left: 392px;
+  margin-left: 5%;
+}
+@media screen and (min-width: 480px) {
+  .service-btn {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .service-btn {
+    margin-left: 26%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service-btn {
+    margin-left: 32%;
+    padding: 25px 118px;
+  }
 }
 
 .projects .container {

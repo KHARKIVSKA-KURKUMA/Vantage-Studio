@@ -4,31 +4,56 @@
   }
 }
 .service-desk {
-  @include text-base(null, 11px, 1.51);
+  @include text-base(null, 8px, 1.51);
   text-align: center;
   letter-spacing: 2.7625px;
   text-transform: uppercase;
   color: $accentColor;
   margin-bottom: 5px;
+  @include tablet {
+    @include text-base(null, 11px, 1.51);
+  }
 }
 .service-title {
-  @include text-base(null, 53px, 1);
+  @include text-base(null, 25px, 1);
   font-family: 'Teko';
   text-align: center;
   text-transform: capitalize;
-  max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 24px;
+  @include tablet {
+    @include text-base(null, 50px, 1);
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    @include text-base(null, 53px, 1);
+    margin-bottom: 54px;
+    max-width: 800px;
+  }
 }
 .service-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 66px;
+  column-gap: 60px;
   row-gap: 32px;
-  margin-bottom: 91px;
+  margin-bottom: 50px;
+  @include tablet {
+    column-gap: 55px;
+  }
+  @include desktop {
+    margin-bottom: 91px;
+    column-gap: 66px;
+  }
 }
 .service-item {
-  padding-left: 34px;
+  width: 290px;
+  @include mobile {
+    width: 187px;
+  }
+  @include desktop {
+    padding-left: 34px;
+    width: 300px;
+  }
 }
 .service-holder {
   display: flex;
@@ -63,8 +88,18 @@
   letter-spacing: 2.975px;
   text-transform: uppercase;
   color: $whiteColor;
-  padding: 25px 118px;
+  padding: 25px 80px;
   background-color: $accentColor;
   border: transparent;
-  margin-left: 392px;
+  margin-left: 5%;
+  @include mobile {
+    margin-left: 15%;
+  }
+  @include tablet {
+    margin-left: 26%;
+  }
+  @include desktop {
+    margin-left: 32%;
+    padding: 25px 118px;
+  }
 }
