@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- ------------------------------- HEADER -------------------------------- -->
-    <header id="1" class="header">
+    <header class="header">
       <div class="container">
         <div class="header-logo-container">
           <svg class="header-logo-icon" width="190" height="49">
@@ -50,12 +50,61 @@
             </ul>
           </nav>
         </div>
+        <button type="button" class="js-open-menu" data-menu-open>
+          <svg class="header-menu-icon" width="30" height="30">
+            <use href="./img/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu header__menu__mobile" data-menu>
+        <div class="js-menu-container">
+          <button type="button" class="menu__close" data-menu-close>
+            <svg class="menu__close__icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header-menu-nav">
+            <ul class="header-menu-list list">
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">home</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">about</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">services</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">projects</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-menu-link-nav link">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__social__container">
+            <ul class="menu__mobile__soc list">
+              <li class="menu__mobile__item">
+                <a href="" class="menu__mobile__social link">Facebook</a>
+              </li>
+              <li class="menu__mobile__item">
+                <a href="" class="menu__mobile__social link">Twitter</a>
+              </li>
+              <li class="menu__mobile__item">
+                <a href="" class="menu__mobile__social link">Instagram</a>
+              </li>
+              <li class="menu__mobile__item">
+                <a href="" class="menu__mobile__social link">Pinterest</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- ----------------------------------------------------------------------- -->
     <main>
       <!-- -------------------------------- HERO --------------------------------- -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero-bg-wrap"></div>
           <ul class="hero-soc-list list">
@@ -94,9 +143,9 @@
             <div class="hero-square"></div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- -------------------------------- ABOUT -------------------------------- -->
-      <section id="2" class="about">
+      <!-- <section id="2" class="about">
         <div class="container">
           <div class="about-wrap">
             <div class="about-container">
@@ -153,8 +202,10 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="novelty">
+      </section> -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!-- ------------------------------- NOVELTY ------------------------------- -->
+      <!-- <section class="novelty">
         <div class="container">
           <h2 hidden>Novelty</h2>
           <ul class="novelty-list list">
@@ -199,9 +250,10 @@
             </div>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ----------------------------------------------------------------------- -->
-      <section id="3" class="service">
+      <!-- ------------------------------- SERVICE ------------------------------- -->
+      <!-- <section id="3" class="service">
         <div class="container">
           <p class="service-desk">services</p>
           <h2 class="service-title">
@@ -301,9 +353,10 @@
           </ul>
           <button class="service-btn">see all services</button>
         </div>
-      </section>
+      </section> -->
+      <!-- ----------------------------------------------------------------------- -->
       <!-- ------------------------------ PROJECTS ------------------------------- -->
-      <section id="4" class="projects">
+      <!-- <section id="4" class="projects">
         <div class="container">
           <ul class="projects-list list">
             <li class="project-item">
@@ -353,11 +406,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ----------------------------------------------------------------------- -->
     </main>
     <!-- ------------------------------- FOOTER -------------------------------- -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-top-container"></div>
         <div class="footer-wrap">
@@ -414,7 +467,8 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
     <!-- ----------------------------------------------------------------------- -->
+    <script src="mobile-menu.js"></script>
   </body>
 </html>

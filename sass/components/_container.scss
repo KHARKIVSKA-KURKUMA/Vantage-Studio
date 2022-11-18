@@ -1,5 +1,25 @@
 .container {
-  width: 1300px;
-  padding: 0 68px;
-  // margin: 0 auto;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+    padding: 0 40px;
+  }
+  @include desktop {
+    width: 1200px;
+    padding: 0 68px;
+  }
+}
+.js-menu-container {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @include mobile {
+    width: 480px;
+  }
 }
