@@ -1,0 +1,38 @@
+.projects {
+  .container {
+    padding-bottom: 68px;
+    padding-top: 68px;
+    background-color: $bgColor;
+  }
+}
+.projects-list {
+  display: flex;
+  justify-content: space-around;
+}
+.project-item {
+  &:last-child {
+    ::after {
+      display: none;
+    }
+  }
+}
+.projects-wrap {
+  position: relative;
+  width: 100%;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    background: $accentColor;
+    bottom: 50%;
+    right: -40%;
+  }
+}
+.project-icon {
+  transition: fill $transition;
+  .projects-link:hover &,
+  .projects-link:focus & {
+    fill: $accentColor;
+  }
+}

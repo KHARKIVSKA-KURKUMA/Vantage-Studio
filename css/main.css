@@ -447,6 +447,42 @@ body {
   margin-left: 392px;
 }
 
+.projects .container {
+  padding-bottom: 68px;
+  padding-top: 68px;
+  background-color: #ebebeb;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-item:last-child ::after {
+  display: none;
+}
+
+.projects-wrap {
+  position: relative;
+  width: 100%;
+}
+.projects-wrap::after {
+  content: "";
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  background: #99823d;
+  bottom: 50%;
+  right: -40%;
+}
+
+.project-icon {
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-link:hover .project-icon, .projects-link:focus .project-icon {
+  fill: #99823d;
+}
+
 .footer .container {
   background-color: #ebebeb;
   padding-top: 66px;
