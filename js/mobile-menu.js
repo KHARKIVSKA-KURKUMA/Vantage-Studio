@@ -4,7 +4,7 @@
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     menu: document.querySelector('[data-menu]'),
     body: document.querySelector('body'),
-    menuList: document.querySelector('.menu__mobile__list'),
+    menuList: document.querySelector('.header-menu-list'),
   };
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
