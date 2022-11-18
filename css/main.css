@@ -1313,29 +1313,4 @@ body {
   .footer-bottom-container {
     height: 200px;
   }
-}
-
-.footer-dev-list {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .footer-dev-list {
-    display: flex;
-    gap: 36px;
-    padding-top: 132px;
-    padding-left: 140px;
-  }
-}
-
-.dev-link {
-  font-size: 11px;
-  line-height: 3.09;
-  text-align: center;
-  letter-spacing: 2.7625px;
-  text-transform: uppercase;
-  color: #ffffff;
-  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.dev-link:hover, .dev-link:focus {
-  color: #99823d;
 }/*# sourceMappingURL=main.css.map */

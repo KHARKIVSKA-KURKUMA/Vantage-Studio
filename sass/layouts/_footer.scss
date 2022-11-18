@@ -136,24 +136,3 @@
     height: 200px;
   }
 }
-.footer-dev-list {
-  display: none;
-  @include desktop {
-    display: flex;
-    gap: 36px;
-    padding-top: 132px;
-    padding-left: 140px;
-  }
-}
-.dev-link {
-  @include text-base(null, 11px, 3.09);
-  text-align: center;
-  letter-spacing: 2.7625px;
-  text-transform: uppercase;
-  color: $whiteColor;
-  transition: color $transition;
-  &:hover,
-  &:focus {
-    color: $accentColor;
-  }
-}
