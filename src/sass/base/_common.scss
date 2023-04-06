@@ -1,8 +1,14 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: $titleColor;
+  cursor: url(../img/cursor.cur), default;
 }
-
+a,
+button {
+  &:hover {
+    cursor: url(../img/cursor.cur), default;
+  }
+}
 .link {
   text-decoration: none;
 }
