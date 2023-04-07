@@ -131,8 +131,17 @@
 }
 .footer-bottom-container {
   background-color: $mainColor;
-  height: 180px;
+  height: 150px;
   @include desktop {
-    height: 200px;
+    height: 160px;
+  }
+}
+.watermark-item {
+  background-color: $mainColor;
+  display: flex;
+  justify-content: center;
+  .rights-item {
+    text-align: center;
+    color: $whiteColor;
   }
 }
