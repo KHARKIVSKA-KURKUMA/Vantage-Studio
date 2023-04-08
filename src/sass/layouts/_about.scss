@@ -79,16 +79,77 @@
   }
 }
 .about-square {
-  display: block;
+  display: none;
   @include tablet {
-    display: block;
+    display: flex;
     width: 250px;
     height: 453px;
-    background-color: $accentColor;
+    flex-direction: column;
+    justify-content: space-around;
+    // background-color: $accentColor;
   }
   @include desktop {
     width: 424px;
-    height: 375px;
+    max-height: 375px;
+    justify-content: space-evenly;
+  }
+  .about-sq-box {
+    @include tablet {
+      padding: 20px;
+    }
+    @include desktop {
+      padding: 40px;
+    }
+  }
+  .about-sq-wrap {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    @include tablet {
+      gap: 10px;
+    }
+    @include desktop {
+      gap: 20px;
+    }
+  }
+  .about-sq-desk {
+    letter-spacing: 2.7625px;
+    text-transform: uppercase;
+    color: $accentColor;
+    margin-bottom: 5px;
+    @include tablet {
+      @include text-base(null, 12px, 1.51);
+    }
+  }
+  .about-sq-data {
+    letter-spacing: 2.7625px;
+    text-transform: uppercase;
+    color: $accentColor;
+    margin-bottom: 5px;
+    @include tablet {
+      @include text-base(null, 12px, 1.51);
+    }
+
+    span {
+      @include tablet {
+        padding-right: 10px;
+      }
+      @include desktop {
+        padding-right: 20px;
+      }
+    }
+  }
+  .about-sq-news {
+    font-family: 'Teko';
+
+    text-transform: capitalize;
+    color: $titleColor;
+    @include tablet {
+      @include text-base(null, 30px, 1);
+    }
+    @include desktop {
+      @include text-base(null, 26px, 1);
+    }
   }
 }
 .about-list {
