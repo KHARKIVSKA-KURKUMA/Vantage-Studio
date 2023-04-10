@@ -147,6 +147,9 @@
   .rights-item {
     text-align: center;
     color: $whiteColor;
+    a {
+      text-decoration: none;
+    }
   }
 }
 .up {
@@ -171,9 +174,7 @@
   justify-content: center;
   align-items: center;
   transition: opacity $transition;
-
   text-decoration: none;
-
   &:hover {
     opacity: 0.9;
   }

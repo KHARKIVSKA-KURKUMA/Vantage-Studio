@@ -2,10 +2,11 @@
   padding-top: 76px;
   padding-bottom: 76px;
   @include desktop {
-    padding-top: 136px;
-    padding-bottom: 136px;
+    padding-top: 80px;
+    padding-bottom: 110px;
   }
 }
+
 .novelty-list {
   display: flex;
   flex-direction: column;
@@ -19,12 +20,14 @@
   @include desktop {
     gap: 34px;
     flex-wrap: nowrap;
+    max-width: 1064px;
+    padding-left: 25px;
   }
 }
 .novelty-holder {
   position: relative;
   width: 290px;
-  margin-left: 15px;
+  // margin-left: 15px;
   @include mobile {
     width: 365px;
   }
@@ -32,7 +35,7 @@
     width: 314px;
   }
   @include desktop {
-    width: 365px;
+    width: calc((1200 - 270) / 3);
   }
 }
 .new {

@@ -5,8 +5,8 @@ window.onscroll = function () {
 upBtn.addEventListener('click', topFunction);
 function scrollFunction() {
   if (
-    document.body.scrollTop > 600 ||
-    document.documentElement.scrollTop > 600
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
   ) {
     upBtn.style.display = 'flex';
     upBtn.classList.remove('is-hidden');
